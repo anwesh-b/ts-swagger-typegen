@@ -8,7 +8,7 @@ yarn add ts-swagger-typegen
 ```
 
 ##### Step 2: Create a configration file
-Add a `open.config.json` with content:
+Add a `typegen.config.json` with content:
 ```json
 {
   "dev": {
@@ -18,3 +18,16 @@ Add a `open.config.json` with content:
   }
 }
 ```
+
+#### Step 3: Add to scripts in package json
+```json
+  "scripts": {
+    "typegen": "ts-swagger-typegen"
+  }
+```
+
+#### Step 4: Generate types
+```bash
+yarn typegen dev
+```
+> You can change `dev` to any environment as specified in `typegen.config.json`

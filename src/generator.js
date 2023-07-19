@@ -2,6 +2,8 @@ const fs = require('fs');
 const axios = require('axios');
 const { cwd } = require('process');
 
+const configFile = '/typegen.config.json'
+
 function parseToTypes({ key, data }) {
   const preText = key ? key + ": " : "";
 
@@ -67,7 +69,7 @@ const getSwaggerSchemas = async (url) => {
 const getConfigFromFile = () => {
   const cwdd = cwd();
 
-  const file = fs.readFileSync(cwdd + '/open.config.json', 'utf8', function (err, data) {
+  const file = fs.readFileSync(cwdd + configFile, 'utf8', function (err, data) {
     if (err) throw err;
     return JSON.parse(data);
   });
