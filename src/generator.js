@@ -43,7 +43,7 @@ const getTypes = (schemas) => {
   let str = "";
 
   Object.entries(schemas).forEach(([key, values]) => {
-    str += `type ${key} = {\n`;
+    str += `export type ${key} = {\n`;
     Object.entries(values.properties).forEach(([key, data]) => {
       str += '\t' + parseToTypes({ key, data }) + ',\n';
     })
