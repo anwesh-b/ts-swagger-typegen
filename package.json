@@ -1,9 +1,9 @@
 {
   "name": "ts-swagger-typegen",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Generate TS types with swagger",
   "main": "index.js",
-  "repository": "https://github.com/anwesh-b/ts-gen-swagger",
+  "repository": "https://github.com/anwesh-b/ts-swagger-typegen",
   "author": "Anwesh Budhathoki",
   "license": "MIT",
   "bin": {
