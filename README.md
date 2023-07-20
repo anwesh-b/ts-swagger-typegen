@@ -31,3 +31,14 @@ Add a `typegen.config.json` with content:
 yarn typegen dev
 ```
 > You can change `dev` to any environment as specified in `typegen.config.json`
+
+### Best practices
+- Always gitignore the type file
+- Add configuration for all the environemnts
+- Generate the type before development and during build process
+
+### TODO
+- Eslint configuration
+- Add tests
+- Generation from multiple swagger
+- Service layer code 
